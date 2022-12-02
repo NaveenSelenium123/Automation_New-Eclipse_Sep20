@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="NoRoom" value="2"/>
+    <parameter name="fname" value="welcome"/>
+    <parameter name="address" value="Chennai"/>
+    <parameter name="pass" value="123456"/>
+    <parameter name="cc_num" value="0123456789123456"/>
+    <parameter name="last_name" value="Kumar"/>
+    <parameter name="cc_cvv" value="123"/>
+    <parameter name="ccType" value="1"/>
+    <parameter name="expMonth" value="1"/>
+    <parameter name="expYear" value="1"/>
+    <parameter name="Adult" value="2"/>
+    <parameter name="Children" value="2"/>
+    <parameter name="user" value="NaveenSelenium"/>
+    <parameter name="Room" value="2"/>
+    <parameter name="Hotel" value="2"/>
+    <parameter name="Location" value="2"/>
+    <classes>
+      <class name="para.Login">
+        <methods>
+          <include name="tc4"/>
+        </methods>
+      </class> <!-- para.Login -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

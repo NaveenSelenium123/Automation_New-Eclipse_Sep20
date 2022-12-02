@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  
+  <parameter name="user" value="NaveenSelenium"></parameter>
+  <parameter name="pass" value="123456"></parameter>
+  <parameter name="Location" value="2"></parameter>
+  <parameter name="Hotel" value="2"></parameter>
+  <parameter name="Room" value="2"></parameter>
+  <parameter name="NoRoom" value="2"></parameter>
+  <parameter name="Adult" value="2"></parameter>
+  <parameter name="Children" value="2"></parameter>
+  <parameter name="fname" value="welcome"></parameter>
+  <parameter name="last_name" value="Kumar"></parameter>
+  <parameter name="address" value="Chennai"></parameter>
+  <parameter name="cc_num" value="0123456789123456"></parameter>
+  <parameter name="ccType" value="1"></parameter>
+  <parameter name="expMonth" value="1"></parameter>
+  <parameter name="expYear" value="12"></parameter>
+  <parameter name="cc_cvv" value="123"></parameter>
+  
+  
+  
+    <classes>
+      <class name="para.Login"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

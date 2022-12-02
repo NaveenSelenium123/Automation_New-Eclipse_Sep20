@@ -1,6 +1,7 @@
 package openQA;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -23,7 +24,13 @@ public static void main(String[] args) throws InterruptedException {
 	driver.findElement(By.xpath("//input[@type='radio']")).click();
 	//driver.switchTo().frame(0);
 	WebElement language = driver.findElement(By.xpath("//*[@id=\"msdd\"]"));
-//	driver.switchTo().frame(0);
+	language.click();
+	WebElement langjs = driver.findElement(By.xpath("//*[@id=\"basicBootstrapForm\"]/div[7]/div/multi-select/div[2]/ul/li[4]/a"));
+
+	
+	JavascriptExecutor js =(JavascriptExecutor) driver;
+	js.executeScript("arguments[0].click()", langjs);
+	//	driver.switchTo().frame(0);
 	Select s=new Select(language);
 	s.selectByIndex(5);
 	WebElement skl = driver.findElement(By.id("Skills"));
